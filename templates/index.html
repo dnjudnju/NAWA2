@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>単語シャッフラー</title>
+</head>
+<body>
+    <h1>単語シャッフラー</h1>
+    <form method="post">
+        <label for="input_text">テキストを入力してください:</label><br>
+        <textarea id="input_text" name="input_text" rows="4" cols="50" placeholder="テキストを入力してください"></textarea><br><br>
+        <input type="submit" value="シャッフル">
+    </form>
+    {% if shuffled_text %}
+        <h2>シャッフルされたテキスト:</h2>
+        <p>{{ shuffled_text }}</p>
+    {% endif %}
+</body>
+</html>
